@@ -124,7 +124,7 @@ WindowsBitmap::SetColor(BYTE red,BYTE green,BYTE blue){
 //----------------------------------------------------------------------
 void
 WindowsBitmap::SaveToFile(const char * filename){
-  DWORD bfSize = BufferSize+52;
+  DWORD bfSize = BufferSize+54;
   WORD bfReserved1 = 0;
   WORD bfReserved2 = 0;
   DWORD bfOffBits = 54;
@@ -135,7 +135,7 @@ WindowsBitmap::SaveToFile(const char * filename){
   WORD biPlanes = 1;
   WORD biBitCount = 24;
   DWORD biCompression = 0;
-  DWORD biSizeImage = BufferSize;
+  DWORD biSizeImage = 0;
   DWORD biXPelsPerMeter = 0;
   DWORD biYPelsPerMeter = 0;
   DWORD biClrUsed = 0;
