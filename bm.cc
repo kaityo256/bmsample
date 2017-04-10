@@ -37,7 +37,7 @@ using namespace std;
 WindowsBitmap::WindowsBitmap(int w, int h){
   Width = w;
   Height = h;
-  
+  Line = ((w*3 -1)/4)*4 + 4; 
   BufferSize = Line*h;
   ImageBuffer = new BYTE[BufferSize];
   for(int i=0;i<BufferSize;i++){
