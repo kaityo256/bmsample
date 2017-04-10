@@ -7,13 +7,12 @@
 Sample source codes to make Windows Bitmap File.
 Note that this sample does not take care of byte order. 
 
-usage:
+## Usage
 
     $ make
     $ ./bm
 
 # Files
-
 * bm.cc bm.h
     * WindowsBitmap class.
 
@@ -47,4 +46,4 @@ Methods descriptions:
     - Draw a circle at (x,y) with radius r.
 
 - WindowsBitmap::SaveToFile(const char\* filename)
-    - Save a bitmap file to filename.
+ Save a bitmap file to filename.

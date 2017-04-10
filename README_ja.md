@@ -2,7 +2,8 @@ Japanese/ [English](README.md)
 
 # Windows Bitmap file 出力サンプル
 
-##概要
+## 概要
+
 
 Windows Bitmap fileを管理するクラスとその利用例。
 エンディアン修正はしていないので、ビッグエンディアンの
@@ -10,19 +11,19 @@ Windows Bitmap fileを管理するクラスとその利用例。
 
 ## 使い方
 
-$ make
-$ ./bm
+    $ make
+    $ ./bm
 
 ##ファイル:
 
 * bm.cc bm.h
-  WindowsBitmap クラス。Drawメソッド群やSave機能を持つ。
+    * WindowsBitmap クラス。Drawメソッド群やSave機能を持つ。
 
 *draw3d.cc draw3d.h
- 手抜き一次変換クラス。
+    * 手抜き一次変換クラス。
 
 *test.bmp
-  出力ビットマップファイル
+    * 出力ビットマップファイル
 
 ## WindowsBitmapクラスのメソッドの説明：
 
